@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Template xmlns="https://schemas.altazion.com/sys/template.xsd">
+  <Name>{{git_repo_name}}</Name>
+  <Description></Description>
+  <Author>{{git_repo_owner}}</Author>
+  <BasedOn>Vending</BasedOn>
+
+  <Content root=".">
+    <Variation code="01" label="Main">
+      <VariationContent kind="HomePage">
+        <Folder path="main" />
+      </VariationContent>
+    </Variation>
+    <Shared kind="CSS">
+      <Folder path="style" />
+    </Shared>
+    <Shared kind="JS">
+      <File path="scripts/app.js"/>
+    </Shared>
+  </Content>
+</Template>
